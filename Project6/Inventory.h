@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 #include <map>
-#include <ctime>      // For getting current year
+#include <ctime>       
 #include "Book.h"
 #include "PaperBook.h"
 #include "EBook.h"
@@ -16,7 +16,7 @@ public:
 
     void addBook(const string& ISBN, Book* book) {
         inventoryList[ISBN] = book;
-        cout << "Quantum book store: Added book with ISBN " << ISBN << " to inventory." << "\n";
+        cout << " book with " << ISBN << " is added to inventory." << "\n";
     }
 
     void removeOutDated(long max_age) {
@@ -28,7 +28,7 @@ public:
             long bookYear = book->getYearOfPublished();
 
             if ((currentYear - bookYear) > max_age) {
-                cout << "Quantum book store: Removing outdated book with ISBN " << it->first << "\n";
+                cout << " outdated book with " << it->first << " is removed \n";
                 delete book;   
                 it = inventoryList.erase(it);   
             }
@@ -48,7 +48,7 @@ public:
     double buyBook(  string  ISBN, long Quantity, const string& email = "", const string& address = "") {
         auto it = inventoryList.find(ISBN);
         if (it == inventoryList.end()) {
-            throw runtime_error("Quantum book store: The book is not found");
+            throw runtime_error(" The book is not found");
         }
 
         Book* book = it->second;
