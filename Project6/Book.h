@@ -52,7 +52,7 @@ public:
 
     virtual double buy(long bookQuantity, const string& email = "", const string& address = "") {
         if (bookQuantity > quantity) {
-            throw runtime_error("Quantum book store: Invalid book quantity requested.");
+            throw runtime_error(" Invalid book quantity requested.");
         }
 
         quantity -= bookQuantity;
