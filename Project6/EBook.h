@@ -17,7 +17,7 @@ public:
 
      double buy(long bookQuantity, const string& email = "", const string& address = "") override {
          if (bookQuantity > quantity) {
-             throw runtime_error("Quantum book store: Invalid book quantity requested.");
+             throw runtime_error(" Invalid book quantity requested.");
          }
           
 
@@ -28,7 +28,7 @@ public:
          return price * bookQuantity;
      }
      void send_to_email(const string& email) {
-         cout << "Quantum book store: Sending eBook to" << " " << email << " MailService\n";
+         cout << " Sending eBook to" << " " << email << " MailService\n";
 
      }
 };
