@@ -1,22 +1,22 @@
  Sample Output
 
-Quantum book store: Added book with ISBN ISBN-PB001 to inventory.
-Quantum book store: Added book with ISBN ISBN-EB001 to inventory.
-Quantum book store: Added book with ISBN ISBN-DB001 to inventory.
+ book with ISBN-PB001 is added to inventory.
+ book with ISBN-EB001 is added to inventory.
+ book with ISBN-DB001 is added to inventory.
 
 --- Buying a PaperBook ---
-Quantum book store: Sending Paper Book to 123 Cairo Street ShippingService
-Quantum book store: Total paid = 400 EGP
+ Sending Paper Book to 123 Cairo Street ShippingService
+ Total paid Amount= 400
 
 --- Buying an EBook ---
-Quantum book store: Sending eBook to user@example.com MailService
-Quantum book store: Total paid = 120 EGP
+ Sending eBook to user@example.com MailService
+ Total paid Amount = 120
 
 --- Attempting to Buy a DemoBook (should fail) ---
-Quantum book store: Exception caught - Invalid Sale
+Exception - Invalid Sale
 
 --- Removing Outdated Books ---
-Quantum book store: Removing outdated book with ISBN ISBN-DB001
-Quantum book store: Removing outdated book with ISBN ISBN-PB001
+ outdated book with ISBN-DB001 is removed
+ outdated book with ISBN-PB001 is removed
 
-Quantum book store: Test completed.
+ test ends sucssefully.
