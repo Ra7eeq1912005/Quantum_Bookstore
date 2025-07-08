@@ -1,6 +1,6 @@
-#include "QuantumBookstoreFullTest.h"
+#include "Test.h"
 
 int main() {
-    QuantumBookstoreFullTest::run();
+    Test::run();
     return 0;
 }
